@@ -25,6 +25,6 @@
   },
   "private": true,
   "author": "Paul Onteri - https://paulonteri.com",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://nasa.proj.paulonteri.com/api"
 }
