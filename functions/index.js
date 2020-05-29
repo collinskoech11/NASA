@@ -3,11 +3,13 @@ const express = require("express");
 const cors = require("cors");
 const https = require("https");
 
+const credentials = functions.config().nasa;
+
 const app = express();
 app.use(cors({ origin: true }));
 
 const LINK = "https://api.nasa.gov/planetary/apod?api_key=";
-const API_KEY = "DEMO_KEY";
+const API_KEY = credentials.key;
 
 app.get("/", (req, res) => {
   https
